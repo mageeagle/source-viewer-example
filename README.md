@@ -7,6 +7,10 @@ osc-server-savedState.js saves OSC messages on the server and recalls them whene
 
 A Max/MSP patch is included to demonstrate the OSC messages accepted by the web interface. The SPAT5 package by IRCAM is required.
 
+Note: If you use the demo Web Interface directly, the browser might complain about the connection being not secure and refuses to connect. 
+You might be better off cloning the source-viewer repository and running a dev server, running it in a local network. 
+Please refer to the comments on osc-server-simple.js
+
 ## Usage
 Open example.maxpat and follow the instructions. The server can be run in Node4Max there.
 
