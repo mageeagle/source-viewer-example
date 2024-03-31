@@ -56,6 +56,10 @@ osc.on("/source/number", (msg) => {
 
 osc.on("connected", (msg) => {
   console.log("New Client Connected");
+  // Settings may be pre-activated by sending OSC on a new client connect
+  // This is useful to preset a certain style or disable interface for audiences
+  const disableInterface = new OSC.Message("/interface/disable", 1)
+  osc.send(disableInterface)
 
   // Output saved values in a bundle
   const out = [];
@@ -64,6 +68,7 @@ osc.on("connected", (msg) => {
   const speakerNumMsg = new OSC.Message("/speaker/number", speakerNumber);
   out.push(speakerNumMsg);
   // OSC messages default broadcast to all connected websocket clients, this might cause issues
+  // There is probably a way to work around this through a custom server so you could customize the callback function
   // Waiting for response of maintainer of osc-js
   const bundle = new OSC.Bundle(out);
   osc.send(bundle);
