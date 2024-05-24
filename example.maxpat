@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1418.0, 850.0 ],
+		"rect" : [ 1741.0, 77.0, 1395.0, 712.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -126,7 +126,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 82.487180292606354, 675.239322483539581, 85.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "/output/aed $1"
 								}
 
@@ -1772,35 +1771,6 @@
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 535.111091494560242, 208.379577398300171, 29.5, 22.0 ],
 					"text" : "t b l"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-53",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 535.111091494560242, 266.090103030204773, 61.0, 22.0 ],
-					"text" : "delay 500"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-52",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "int", "" ],
-					"patching_rect" : [ 418.776078939437866, 266.143712759017944, 97.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "spat5.osc.collect"
 				}
 
 			}
@@ -5317,8 +5287,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -5517,7 +5485,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-52", 0 ],
+					"destination" : [ "obj-203", 0 ],
+					"midpoints" : [ 428.276078939437866, 651.764342248439903, 122.765632510185242, 651.764342248439903 ],
 					"source" : [ "obj-195", 0 ]
 				}
 
@@ -5819,29 +5788,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-203", 0 ],
-					"midpoints" : [ 428.276078939437866, 651.764342248439903, 122.765632510185242, 651.764342248439903 ],
-					"source" : [ "obj-52", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-52", 0 ],
-					"midpoints" : [ 544.611091494560242, 298.090103030204773, 523.943584859371185, 298.090103030204773, 523.943584859371185, 261.064765334129333, 428.276078939437866, 261.064765334129333 ],
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
-					"source" : [ "obj-54", 0 ]
 				}
 
 			}
@@ -6224,10 +6170,6 @@
 				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5-x64/patchers",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "spat5.osc.collect.mxe64",
-				"type" : "mx64"
 			}
 , 			{
 				"name" : "spat5.osc.fromdict.mxe64",
